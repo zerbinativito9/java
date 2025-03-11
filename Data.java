@@ -5,8 +5,17 @@ public class Data {
     private int ano;
 
     //Métodos
-    public String imprimirData(){
-        return dia + "-" + mes.getNumMes() + "-" + ano + "\n";
+    public String imprimirData(int opcao){
+        switch (opcao) {
+            case 1:
+                return dia + " de " + mes.getDescricaoMes() + " de " + ano;
+            case 2:
+                return dia + "-" + mes.getNumMes() + "-" + ano;
+            case 3:
+                return dia + " de " + mes.getSiglaMes() + " de " + ano;
+        }
+
+        return null;
     }
 
     private void setDia(int dia){

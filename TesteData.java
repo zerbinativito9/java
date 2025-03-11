@@ -12,14 +12,14 @@ public class TesteData{
         //data.setAno(2025); obsoleto
 
         System.out.println("\n\t\t\t -- Data --\n");
-        System.out.println("Data: " + data.imprimirData());
+        System.out.println("Data: " + data.imprimirData(3));
 
         //Criação e instância de outra data
         Data outraData = new Data();
 
         //Imprimir outra data
         System.out.println("\n\t\t\t -- Outra Data -- \n");
-        System.out.println("Outra Data: " + outraData.imprimirData());
+        System.out.println("Outra Data: " + outraData.imprimirData(2));
 
     }
 }
